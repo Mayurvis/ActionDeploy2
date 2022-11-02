@@ -52,8 +52,7 @@ jobs:
       id: validation
       run: terraform validate
       continue-on-error: false
-
-      
+   
     - name: Terraform Apply
       id: apply
       run: terraform apply -auto-approve
