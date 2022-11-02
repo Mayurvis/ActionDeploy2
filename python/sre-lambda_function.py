@@ -11,5 +11,5 @@ def lambda_handler(event, context):
          <br>
         """
     message={"Subject":{"Data":subject},"Body":{"Html":{"Data":body}}}
-    response=client.send_email(Source="mayur.vispute@nice.com",Destination={"ToAddresses":["mayur.vispute@nice.com"]},Message=message)
+    response=client.send_email(Source="email",Destination={"ToAddresses":["email"]},Message=message)
     print("Mail sent")
